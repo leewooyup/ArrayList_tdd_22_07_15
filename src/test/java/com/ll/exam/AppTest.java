@@ -124,4 +124,14 @@ public class AppTest {
         assertTrue(rs.contains("1 : 200"));
         assertTrue(rs.contains("2 : 30"));
     }
+
+    @Test
+    void addAt() {
+        ArrayList al = new ArrayList();
+        al.add(100);
+        al.add(200);
+        assertEquals(200, al.get(1));
+        al.addAt(300, 1);
+        assertEquals(300, al.get(1));
+    }
 }

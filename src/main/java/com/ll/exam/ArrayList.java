@@ -49,4 +49,15 @@ public class ArrayList {
             System.out.printf("%d : %d\n", i, arr[i]);
         }
     }
+
+    public void addAt(int data, int index) {
+        size++;
+        if(size >= arr.length) {
+            sizeUp();
+        }
+        for(int i = size; i > index; i--) {
+            arr[i] = arr[i-1];
+        }
+        arr[index] = data;
+    }
 }
