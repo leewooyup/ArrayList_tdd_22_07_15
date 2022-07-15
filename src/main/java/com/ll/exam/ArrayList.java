@@ -44,5 +44,9 @@ public class ArrayList {
     }
 
     public void showAllValues() {
+        System.out.println("== 전체 데이터 출력 ==");
+        for(int i = 0; i < size; i++) {
+            System.out.printf("%d : %d\n", i, arr[i]);
+        }
     }
 }
