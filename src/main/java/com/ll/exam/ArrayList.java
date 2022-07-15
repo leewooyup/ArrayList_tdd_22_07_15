@@ -42,4 +42,7 @@ public class ArrayList {
     public int getArrayLength() {
         return arr.length;
     }
+
+    public void showAllValues() {
+    }
 }
